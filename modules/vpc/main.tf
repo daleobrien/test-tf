@@ -4,8 +4,8 @@ provider "aws" {
   profile = "dale"
 }
 
-
 variable "common_tags" {
+
 }
 
 variable "cidr_block" {
