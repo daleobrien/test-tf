@@ -5,10 +5,14 @@ provider "aws" {
 }
 
 
-variables "cidr_block" {
-   
+variable "common_tags" {
+}
+
+variable "cidr_block" {
+  type = string
 }
 
 resource "aws_vpc" "vpc" {
   cidr_block = var.cidr_block
+  tags = var.common_tags
 } 
