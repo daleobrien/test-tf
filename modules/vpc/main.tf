@@ -4,9 +4,8 @@ provider "aws" {
   profile = "dale"
 }
 
-variable "common_tags" {
-
-}
+variable "common_tags" {}
+variable "environment" {}
 
 variable "cidr_block" {
   type = string
